@@ -208,7 +208,7 @@ nav{
   transition: .5s;
 }
 
-/*#################HABILIDADES#########################*/
+/* #################HABILIDADES######################### */
 .content-skills {
     display: flex; 
     flex-wrap: wrap; 
@@ -255,3 +255,237 @@ nav{
     background: #d03d3d;
     transition: .5s;
 }
+
+/* ################################## CERTIFICADOS ################################## */
+.certificados {
+    background: #f2f2f2;
+    /* padding: 0 100px; */
+}
+
+.content-certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.certificate {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 22%;
+    padding: 15px;
+    color: #565759;
+    margin: 30px 20px 20px 0;
+    text-align: center;
+}
+
+.certificate img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.certificate:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    color: #fff;
+    background: #d03d3d;
+    transition: .5s;    
+}
+
+.certificate a {
+    text-decoration: none;
+    color: #565759;
+}
+
+.certificate a:hover {
+    color: #fff;
+}
+
+/* ################################## INFO PERSONAL ################################## */
+.content-infopersonal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.space-infoperson {
+    width: 30%;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.space-infoperson img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 10px solid #f2f2f2;
+}
+
+.space-infoperson p {
+    text-align: justify;
+    font-size: 300;
+    color: #565759;
+}
+
+.space-infoperson img:hover {
+    box-shadow: 0 5px 20px rgba(17, 29, 48, .26);
+    transition: .5s;
+}
+
+
+/* ################################## FOOTER ################################## */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+    font-family: 'Arial', sans-serif;
+}
+
+.partFooter {
+    flex: 1 1 300px;
+    margin: 20px;
+}
+
+.partFooter img {
+    max-width: 180px;
+    height: auto;
+}
+
+.partFooter h4 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #00aaff;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact i {
+    margin-right: 10px;
+    font-size: 1.1em;
+    color: #00aaff;
+    width: 20px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.social-media a {
+    margin-right: 15px;
+    font-size: 1.4em;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #00aaff;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-media a {
+        margin: 10px;
+    }
+}
+
+
+/* ################################## BREAKPOINTS RESPONSIVE WEB ################################## */
+@media screen and (min-width:1000px) and (max-width:1200px) {
+
+    .space-infoperson img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+   
+    h1 {
+        font-size: 35px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+
+    .contenido-header>img {
+        width: 150px; 
+        height: 150px;
+        animation: ease-in animacion 0.5s; 
+    } 
+
+    .nav .enlaces-header a {
+        margin: 0;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+    }
+
+    .textos-header {
+        margin: 0;
+    }
+
+    .contenido-header>img {
+        margin: 0;
+    }
+
+    .articulo {
+        width: 45%;
+    }
+
+    .space-infoperson p {
+        margin-bottom: 20px;
+    }
+
+    .content-infopersonal {
+        margin: 20px 0;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    .certificate {
+        padding: 10px;
+    }
