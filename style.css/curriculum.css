@@ -1,71 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
-body{
-    font-family: 'roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 50px;
 }
 
-.contenedor{
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
-    overflow: hidden;
+.contenedor {
+    width: 90%; 
+    max-width: 1400px; 
+    margin: auto; 
+    overflow: hidden; 
 }
 
-header::before{
+header::before {
     content: "";
     display: block;
     margin-bottom: 80px;
 }
 
-/*#######################MENÚ DE NAVEGACIÓN##################*/
-
-nav{
+/* ################################## MENÚ DE NAVEGACIÓN ################################## */
+nav {
     width: 100%;
     height: 80px;
     background: #fff;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
     position: fixed;
-    top: o;
+    top: 0;
     z-index: 100;
 }
 
-.nav{
+.nav {
     display: flex;
     height: 80px;
     width: 100%;
-    align-items: center;
+    align-items: center; 
 }
 
-.enlaces-header{
+.enlaces-header {
     font-weight: 300;
     margin: auto;
     transition: all ease-in-out .6s;
 }
 
-.nav .enlaces-header a{
-    color: #5d6678;
+.nav .enlaces-header a {
+    color: #5D6678;
     text-decoration: none;
     margin-left: 20px;
     padding: 12px;
     border-radius: 10px;
 }
 
-.nav .enlaces-header a:hover{
+.nav .enlaces-header a:hover {
     color: #fff;
     background-color: #d03d3d;
+    border-color: #d03d3d;
     transition: all ease-in-out .6s;
 }
 
-.hamburger{
+.hamburguer {
     width: 80px;
     height: 80px;
     display: none;
@@ -75,140 +75,181 @@ nav{
     transition: color 0.5s ease-in;
 }
 
-.hamburger>i{
+.hamburguer>i {
     font-size: 25px;
     line-height: 80px;
 }
 
-/* #################### HEADER #################### */
-
 .titulospro {
-  text-align: left;
-  margin: 20px 0;
+    text-align: left;    
+    margin: 20px 0;
 }
 
 .contenido-header {
-  width: 80%;
-  height: 600px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .contenido-header>img {
-  width: 300px;
-  height: 300px;
-  animation: ease-in animacion 0.5s;
-  margin-left: 50px;
-}
-
+    width: 300px; 
+    height: 300px;
+    animation: ease-in animacion 0.5s; 
+    margin-left: 50px;
+}   
+ 
 @keyframes animacion {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .textos-header {
-  margin: 0 0 30px 0;
+    margin: 0 0 0 30px;
 }
 
 .contenido-header p {
-  font-weight: 300;
-  margin-top: 14px;
-  color: #5d6678;
-  text-align: justify;
+    font-weight: 300;
+    margin-top: 14px;
+    color: #5D6678;
+    text-align: justify;
 }
 
 .contenido-header a {
-  margin: 28px 0 0 0;
-  width: 150px;
-  display: inline-block;
-  background: #d03d3d;
-  text-align: center;
-  color: white;
-  padding: 12px 0;
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
+    margin: 28px 0 0 0;
+    width: 150px;
+    display: inline-block;
+    background: #d03d3d;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
-/* #################### EDUCACION #################### */
 
+/* ################################## EDUCACION ################################## */
 .title {
-  margin-top: 50px;
-  display: block;
-  width: 100%;
-  text-align: center;
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .educacion {
-  background: #f2f2f2;
+    background: #f2f2f2;
 }
 
 .content-educacion {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: space-around;
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+    justify-content: space-around; 
 }
 
 .articulo {
-  width: 23%;
-  background: #fff;
-  margin-top: 50px;
-  border-radius: 10px;
-  padding: 45px 30px 60px 30px;
-  transition: 0.5s;
+    width: 23%;
+    background: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
 }
 
 .articulo:hover {
-  box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
-  color: #fff;
-  background: #d03d3d;
-  transition: .5s;
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    color: #fff;
+    background: #d03d3d;
+    transition: .5s;    
 }
 
 .articulo>h3 {
-  font-size: 24px;
-  margin-top: 10px;
-  text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .articulo > i {
-  color: #d03d3d;
-  font-size: 30px;
-  border-radius: 50%;
-  border: 3px solid #d03d3d;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  align-items: center;
-  line-height: 48px;
+    color: #d03d3d;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid #d03d3d;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    line-height: 48px;
 }
 
 .articulo > a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .articulo > a:hover {
-  color: #fff;
-  transition: .5s;
+    color: #fff;
+    transition: .5s;
 }
 
 .articulo > i:hover {
-  color: #fff;
-  transition: .5s;
+    color: #fff;
+    transition: .5s;
 }
 
-/* #################HABILIDADES######################### */
+
+/* ################################## EXPERIENCIA ################################## */
+.experiencia {
+    background-color: #d03d3d;
+    color: #fff;
+}
+
+.content-experience{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.experience {
+    width: 32%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #565759;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.experience:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.experience img {
+    height: 70px;
+    width: auto;
+}
+
+.experience p {
+    text-align: justify;
+}
+
+.experience h3 {
+    margin-bottom: 15px;
+}
+
+
+/* ################################## SKILLS ################################## */
 .content-skills {
     display: flex; 
     flex-wrap: wrap; 
@@ -337,83 +378,101 @@ nav{
 
 /* ################################## FOOTER ################################## */
 footer {
-    background-color: #1a1a1a;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 40px 60px;
-    font-family: 'Arial', sans-serif;
+    background: rgb(70, 70, 70);
+    padding: 20px 0;
+    padding-top: 30px;
+    overflow: hidden; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    margin: auto;
 }
 
 .partFooter {
-    flex: 1 1 300px;
-    margin: 20px;
-}
-
-.partFooter img {
-    max-width: 180px;
-    height: auto;
-}
-
-.partFooter h4 {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    color: #00aaff;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.contact i {
-    margin-right: 10px;
-    font-size: 1.1em;
-    color: #00aaff;
-    width: 20px;
+    width: 22%;
     text-align: center;
 }
 
-.contact p {
-    margin: 0;
-    font-size: 0.95em;
+.partFooter img {
+    width: 60%;
 }
 
-.social-media a {
-    margin-right: 15px;
-    font-size: 1.4em;
+.partFooter h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #d03d3d;
+    padding: 5px;
+    border: 1px solid #d03d3d;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact > i {
+    float: left;
+    margin: 0 0 0 10px;
     color: #fff;
-    transition: color 0.3s ease;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
 }
 
-.social-media a:hover {
-    color: #00aaff;
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contact {
-        justify-content: center;
-    }
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .social-media a {
-        margin: 10px;
-    }
+.partFooter > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
 }
 
+.partFooter > a:hover {
+    color: #fff;
+    background-color: #cf6c6c;
+    border-color: #cf6c6c;
+    transition: all ease-in-out .6s;
+    border-radius: 5px;
+}
+
+.social-media > a > i {
+    font-size: 20px;
+    display: inline-block; 
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    width: 38px; 
+    height: 38px; 
+    line-height: 36px; 
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media > a > i:hover {
+    color: #fff;
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+}
 
 /* ################################## BREAKPOINTS RESPONSIVE WEB ################################## */
 @media screen and (min-width:1000px) and (max-width:1200px) {
@@ -489,3 +548,164 @@ footer {
     .certificate {
         padding: 10px;
     }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .articulo, .experience, .certificate {
+        width: 45%;
+    }
+
+    .skills {
+        width: 32%;
+    }
+
+    .content-infopersonal {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 20px;;
+    }
+
+    .space-infoperson {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    .partFooter {
+        width: 45%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    h1 {
+        font-size: 25px;
+    }
+
+    .contenido-header {
+        width: 100%;
+        height: 560px;
+    }
+
+    .contenido-header>img {
+        width: 120px; 
+        height: 120px;
+        animation: ease-in animacion 0.5s; 
+        margin: 20px 0;
+    }  
+    
+    .articulo, .experience, .certificate, .skills {
+        width: 90%;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .articulo, .experience, .content-skills {
+        margin-top: 20px;
+    }
+
+    .content-skills {
+        margin-bottom: 20px;
+    }
+
+    .content-certificados {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .certificate {
+        margin: 10px;
+        padding: 10px;        
+    }
+
+    .content-infopersonal {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .partFooter img {
+        display: none;
+    }
+
+    .partFooter {
+        width: 95%;
+        margin: auto;
+    }
+
+    .partFooter h4 {
+        margin-bottom: 5px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background-color: #d03d3d;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh; /*100 view*head*/
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: circle(0.0% at 0 0);
+    }
+
+    .nav .hamburgueropen {
+        clip-path: circle(150% at 0 0);
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+        background-color: #cf6c6c;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav .enlaces-header a:hover {
+        color: #d03d3d;
+        background-color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+}
+
